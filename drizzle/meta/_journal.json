@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1737654721119,
+      "tag": "0000_worthless_veda",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1737662627190,
+      "tag": "0001_orange_guardian",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1737908842262,
+      "tag": "0002_white_kat_farrell",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1738021804584,
+      "tag": "0003_loose_calypso",
+      "breakpoints": true
+    }
+  ]
+}
