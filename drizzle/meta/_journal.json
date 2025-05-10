@@ -1,19 +1,12 @@
 {
-  "version": "5",
-  "dialect": "pg",
+  "version": "7",
+  "dialect": "postgresql",
   "entries": [
     {
       "idx": 0,
-      "version": "5",
-      "when": 1746581058083,
-      "tag": "0000_white_spiral",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1746582043525,
-      "tag": "0001_minor_red_wolf",
+      "version": "7",
+      "when": 1746845232065,
+      "tag": "0000_minor_spiral",
       "breakpoints": true
     }
   ]

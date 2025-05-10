@@ -16,3 +16,19 @@ export const insertAccountsSchema = createInsertSchema(accounts,{
     name: z.string(), // Required
     userId: z.string(), // Required
   });
+
+
+  export const categories = pgTable("categories", {
+    id: text("id").primaryKey(),
+    plaidId: text("plaid_id"),
+    name: text("name").notNull(),
+    userId: text("user_id").notNull(),
+});
+
+export const insertCategorySchema = createInsertSchema(accounts,{
+  // Optional: Customize schema if needed
+  id: z.string().optional(), // ID is optional for inserts (can be generated)
+  plaidId: z.string().optional(), // Nullable field
+  name: z.string(), // Required
+  userId: z.string(), // Required
+});
