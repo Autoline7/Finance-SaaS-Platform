@@ -1,8 +1,6 @@
 import {
     Tooltip,
     XAxis,
-    AreaChart,
-    Area,
     ResponsiveContainer,
     CartesianGrid,
     LineChart,
