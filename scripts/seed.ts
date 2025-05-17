@@ -54,7 +54,9 @@ const generateTransactionsForDay = (day: Date) => {
     const numTransactions = Math.floor(Math.random() * 4) + 1;
 
     for( let i = 0; i < numTransactions; i ++){
-        const category = SEED_CATEGORIES[Math.floor(Math.random()) * SEED_CATEGORIES.length];
+        const category = SEED_CATEGORIES[Math.floor(Math.random() * SEED_CATEGORIES.length)];
+        const account = SEED_ACCOUNTS[Math.floor(Math.random() * SEED_ACCOUNTS.length)];
+
 
         const isExpense = Math.random() > 0.6;
 
@@ -63,7 +65,7 @@ const generateTransactionsForDay = (day: Date) => {
 
         SEED_TRANSACTIONS.push({
             id: `transaction_${format(day, "yyyy-MM-dd")}_${i}`,
-            accountId: SEED_ACCOUNTS[0].id,
+            accountId: account.id,
 
             categoryId: category.id,
             date: day,

@@ -8,6 +8,7 @@ import {
 } from "recharts";
 
 import { format } from "date-fns";
+import { CustomTooltip } from "@/components/custom-tooltip";
 
 type Props = {
     data?: {
@@ -32,6 +33,7 @@ export const AreaVariant = ( { data = [] }: Props) => {
                         <stop offset="98%" stopColor="#f43f5e" stopOpacity={0} />
                     </linearGradient>
                 </defs>
+                <Tooltip content={<CustomTooltip />}/>
                 <XAxis 
                     axisLine={false} 
                     tickLine={false} 
